@@ -1,0 +1,35 @@
+# how to add a user 
+
+root@jarvis:~# adduser example
+Adding user `example' ...
+Adding new group `example' (1002) ...
+Adding new user `example' (1002) with group `example' ...
+Creating home directory `/home/example' ...
+Copying files from `/etc/skel' ...
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+Changing the user information for example
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] y
+
+# how to add a group
+
+root@jarvis:~# addgroup exp
+Adding group `exp' (GID 1003) ...
+Done.
+
+# how to see all users and their password 
+root@jarvis:~# vim /etc/passwd
+
+# how to see all groups 
+root@jarvis:~# vim /etc/group
+
+#how to change any user information
+
+root@jarvis:~# usermod --help
